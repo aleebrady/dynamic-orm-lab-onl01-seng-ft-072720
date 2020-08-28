@@ -55,7 +55,7 @@ class InteractiveRecord
     end
     
     def self.find_by(att)
-      column_name = att.key[0].to_s
+      column = att.key[0].to_s
       value = att.value[0]
       
       DB[:conn].execute("Select * From #{table_name} Where #{column} = ?", value)

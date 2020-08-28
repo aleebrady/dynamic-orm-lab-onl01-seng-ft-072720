@@ -7,6 +7,5 @@ class Student < InteractiveRecord
   def self.column_names.each do |row|
     attr_accessor row.to_sym
   end
-  end
 
 end

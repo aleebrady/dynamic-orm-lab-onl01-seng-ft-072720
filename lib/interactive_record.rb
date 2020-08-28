@@ -58,7 +58,7 @@ class InteractiveRecord
       column_name = att.key[0].to_s
       value = att.values[0]
       
-      DB[:conn].execute("Select * From #{table_name") Where #{column} = ?", value)
+      DB[:conn].execute("Select * From #{table_name") Where #{column} = ?", values)
     end
   
 end

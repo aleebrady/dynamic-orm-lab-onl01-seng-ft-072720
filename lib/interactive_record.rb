@@ -54,7 +54,7 @@ class InteractiveRecord
       DB[:conn].execute(sql, name)
     end
     
-    def self.find_by_name
+    def self.find_by
       
     end
   

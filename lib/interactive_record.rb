@@ -54,7 +54,10 @@ class InteractiveRecord
       DB[:conn].execute(sql, name)
     end
     
-    def self.find_by
+    def self.find_by(att)
+      column_name = att.key[0].to_s
+      value = att.values[0]
+      
       
     end
   
